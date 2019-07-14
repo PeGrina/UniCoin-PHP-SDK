@@ -70,9 +70,9 @@ class UniCoinClient{
     $result = $this->request("getHistory", array('count' => $count, 'offset' => $offset));
     return $result;
   }
-  public function getPaymentLink($id = false,$sum = 0, $payload = false){
+  public function getPaymentLink($sum = 0, $payload = false){
     $code = $payload?$payload:rand(-200000000, 200000000);
-    $id = $id?$id:$this->merchant_id;
+    $id = $this->merchant_id;
     $url = "vk.com/app7037638#pay_".$id."_".$sum."_$code";
     return $url;
   }
