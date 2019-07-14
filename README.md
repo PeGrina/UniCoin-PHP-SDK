@@ -3,10 +3,8 @@
 
 Подключение - Скачайте файл sdk.php и подключите его как показано ниже.
 <pre>
-<?php
   include "sdk.php";
   $unicoin = new UniCoinClient(MERCHANT_ID, KEY);
-?>
 </pre>
 Здесь MERCHANT_ID это ID мерчанта, а KEY ключ мерчанта.
 Для того чтобы узнать баланс просто пропишите:
